@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(93, 11, 169);
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.menu-opcao {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-opcao::after{
+    opacity: 0;
+    background-color: #fff;
+    color: black;
+    padding: 4px 10px;
+    border-radius: 12px;
+    content: 'Work in Progress';
+    font-size: 14px;
+    position: absolute;
+    left: 130%;
+    bottom: -48%;
+    transition: opacity .3s;
+}
+.menu-opcao:hover::after {
+    opacity: 1;
+}
+
+.menu-opcao div{
+    width: 30px;
+    height: 2.5px;
+    background-color: #fff;
+    border-radius: .3rem;
+} 
+
+main {
+    display: grid;
+    grid-template-columns: minmax(300px, 600px); 
+    justify-content: center;
+    font-family: 'Poppins';
+    row-gap: 25px;
+    padding: 20px;
+}
+
+
+@media(max-width: 380px){
+    .footer-title {
+        display: block !important;
+        text-align: center;
+    }
+    .footer-title h3{
+        display: none;
+    }
+}
+
+.blog-title h1{
+    font-size: 38px;
+    line-height: 45px;
+    margin-bottom: 10px;
+
+}
+
+.blog-title p {
+    font-weight: 400;
+    color: rgb(54, 53, 53);
+}
+
+.signature p{
+    font-weight: 500;
+}
+
+.signature time {
+    font-weight: 400;
+    color: rgb(54, 53, 53);
+    font-size: 13px;
+}
+
+.redesSociais {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.redesSociais div {
+    background-color:rgb(229, 242, 253);
+    width: 150px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+    transition: background-color .3s ease;
+}
+
+.redesSociais div:hover {
+    background-color: rgb(54, 50, 50);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.redesSociais div img{
+    width: 25px;
+}
+
+.main-image-box small{
+    color: rgb(54, 53, 53);
+    font-size: 12.5px;
+    font-weight: 300;
+    letter-spacing: .1px;
+}
+
+.main-image-box small a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.main-image-box small a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+
+article p {
+    margin: 26px 0;
+    color: rgb(39, 38, 38);
+    line-height: 26px;
+    font-size: 17px;
+
+}
+
+.concept-box h2{
+    margin: 22px 0 0 0;
+}
+
+.creativity-image-box{
+    height: 800px;
+}
+
+.creativity-image-box img {
+    height: 100%;
+}
+
+footer {
+    background-color: rgb(74, 8, 137);
+    padding: 20px 50px;
+    font-family: 'Poppins';
+}
+
+.footer-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:azure;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-links a{
+    color: coral;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.conclusion-box h2 {
+    margin-top: 15px;
+}
